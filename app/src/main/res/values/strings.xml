@@ -1,21 +1,21 @@
 <resources>
-    <string name="app_name">BMS Monitor</string>
+    <string name="app_name">MY BMS</string>
     <string name="app_name_big">BMS</string>
     <string name="app_name_thin">Monitor</string>
-    <string name="appNameSettings">BMS Monitor - Settings</string>
-    <string name="appNameStats">BMS Monitor - Stats</string>
+    <string name="appNameSettings">MY BMS - Settings</string>
+    <string name="appNameStats">MY BMS - Stats</string>
 
     <string name="waitForBms">Waiting for BMS…</string>
     <string name="connectedToBms">BMS: %1$s</string>
     <string name="connectedToBike">Bike: %1$s</string>
 
     <string name="power">Power</string>
-    <string name="speed">Speed</string>
+    <string name="speed">SOC</string>
     <string name="capacity">Capacity</string>
     <string name="cells">Cell Voltage</string>
 
     <string name="navBattery">Battery</string>
-    <string name="navBike">Bike</string>
+    <string name="navBike">Cell</string>
     <string name="navSettings">Settings</string>
     <string name="navStats">Stats</string>
 

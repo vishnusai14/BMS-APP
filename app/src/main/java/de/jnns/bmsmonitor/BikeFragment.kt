@@ -72,8 +72,8 @@ class BikeFragment : Fragment() {
         requireActivity().runOnUiThread {
             binding.speedViewSpeed.speedTo(bikeData.speed.toFloat())
 
-            binding.labelSpeed.text = bikeData.speed.toString()
-            binding.labelAssistLevel.text = bikeData.assistLevel.toString()
+//            binding.labelSpeed.text = bikeData.speed.toString()
+//            binding.labelAssistLevel.text = bikeData.assistLevel.toString()
         }
     }
 }

@@ -27,8 +27,10 @@
             android:background="@color/bgBase"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
             app:sv_centerCircleColor="@color/bgBase2"
             app:sv_centerCircleRadius="18dp"
             app:sv_endDegree="360"
@@ -78,58 +80,48 @@
             app:layout_constraintStart_toStartOf="@+id/speedViewSpeed"
             app:layout_constraintTop_toTopOf="@+id/speedViewSpeed" />
 
-        <TextView
-            android:id="@+id/labelAssistLevel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/aldrich"
-            android:text="@string/zeroZero"
-            android:textColor="@color/white"
-            android:textSize="32sp"
-            android:typeface="monospace"
-            app:layout_constraintBottom_toTopOf="@+id/labelSpeed"
-            app:layout_constraintEnd_toEndOf="@+id/labelSpeed" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/labelSpeed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="64dp"
-            android:fontFamily="@font/aldrich"
-            android:text="@string/zeroZero"
-            android:textColor="@color/white"
-            android:textSize="32sp"
-            android:typeface="monospace"
-            app:layout_constraintBottom_toBottomOf="@+id/speedViewSpeed"
-            app:layout_constraintEnd_toEndOf="@+id/speedViewSpeed" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="383dp"
+        android:layout_height="331dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardGauge">
 
-        <TextView
-            android:id="@+id/labelAssistUnit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginBottom="3dp"
-            android:fontFamily="@font/aldrich"
-            android:text="@string/unitDisplayLevel"
-            android:textColor="@color/darkBorder"
-            android:textSize="24sp"
-            android:typeface="monospace"
-            app:layout_constraintBottom_toBottomOf="@+id/labelAssistLevel"
-            app:layout_constraintStart_toEndOf="@+id/labelAssistLevel" />
+        <LinearLayout
+            android:layout_width="321dp"
+            android:layout_height="104dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.147">
 
-        <TextView
-            android:id="@+id/labelPowerUnit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginBottom="3dp"
-            android:fontFamily="@font/aldrich"
-            android:text="@string/unitDisplayKilometersPerHour"
-            android:textColor="@color/darkBorder"
-            android:textSize="24sp"
-            android:typeface="monospace"
-            app:layout_constraintBottom_toBottomOf="@+id/labelSpeed"
-            app:layout_constraintStart_toEndOf="@+id/labelSpeed" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="74dp"
+                android:layout_height="68dp"
+                app:cardBackgroundColor="@color/bgBase">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="battery"
+                    android:src="@drawable/ic_battery" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@color/batteryDischargeHighest"
+                tools:text="Details of Battery 1" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
